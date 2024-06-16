@@ -6,7 +6,12 @@
  * output => [5,4,3,2,1]
  */
 let result = [];
-
+function forLoop() {
+    for (let i = 5; i >= 1; i--) {
+        result.push(i);
+    }
+    return result;
+}
 
 //export result
-module.exports = result;
+module.exports = forLoop();

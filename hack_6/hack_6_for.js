@@ -9,6 +9,12 @@
 let str = "fooziman";
 let result = [];
 
+function forLoop() {
+  for (let i = 0; i < str.length; i++) {
+    result.push(str[i]);
+  }
+  return result;
+}
 
 //export result
-module.exports = result;
+module.exports = forLoop();

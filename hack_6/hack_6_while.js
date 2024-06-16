@@ -9,6 +9,14 @@
 let str = "fooziman";
 let result = [];
 
+function whileLoop() {
+  let i = 0;
+  while (i < str.length) {
+    result.push(str[i]);
+    i++;
+  }
+  return result;
+}
 
 //export result
-module.exports = result;
+module.exports = whileLoop();

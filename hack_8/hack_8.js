@@ -11,6 +11,16 @@
 let arr = ["foo","bar","baz","qux","echo"];
 let result = [];
 
+function modify_result() {
+  result = arr.slice(1, 4);
+  
+  result[0] = result[0].replace('a', '@');
+  result[1] = result[1].replace('a', '@');
+  
+  result[2] = result[2].toUpperCase();
+  
+  return result;
+}
 
 //export result
-module.exports = result;
+module.exports = modify_result();

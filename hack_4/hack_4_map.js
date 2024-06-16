@@ -5,8 +5,10 @@
  * 
  * output => [1,3,5,7]
  */
-let result = [];
-
-
+let result = [1, 2, 3, 4, 5, 6, 7];
+function map() {
+    return result.filter(num => num % 2 !== 0);
+  }
+  
 //export result
-module.exports = result;
+module.exports = map();
